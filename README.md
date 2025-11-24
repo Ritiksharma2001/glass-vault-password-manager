@@ -1,85 +1,121 @@
+🔐 GlassVault — Offline Encrypted Password Manager
+
 ⚠ Copyright © 2025 Ritik Sharma
-This software is proprietary. Unauthorized copying, distribution or modification of any part of this code is strictly prohibited.
+This software is proprietary. Unauthorized copying, redistribution, or modification is strictly prohibited.
 
-🚀 GlassVault — Secure Offline Password Manager
+🧭 Overview
 
-GlassVault is a privacy-focused password manager built with pure HTML, CSS, and JavaScript — designed to work 100% offline.
-No servers. No accounts. No cloud storage.
-All your data stays encrypted locally inside the browser.
+GlassVault is a lightweight, privacy-focused offline password manager built using pure HTML, CSS, and JavaScript.
+It stores all data locally in the browser, encrypted with military-grade security — meaning:
+
+✔ No cloud
+✔ No accounts
+✔ No tracking
+✔ No external storage
+
+Your data stays 100% in your device.
 
 🛡 Why GlassVault?
-
-🔒 Fully Offline — Nothing is uploaded or synced anywhere
-🧠 Master Password Protected — Only you can unlock the vault
-🔐 AES Encryption — Passwords are securely encrypted before saving
-🎨 Modern UI — Smooth glassmorphism design with Dark/Light mode
-⚡ Fast & Lightweight — Runs instantly in the browser
-💾 Local Backup — Export and import encrypted data anytime
-
-✨ Features
 Feature	Status
-Add, Edit, Delete password entries	✔
-AES-Encrypted storage (localStorage)	✔
+Fully Offline — Works without internet	✔
+Master Password Lock	✔
+AES-256 Encryption	✔
 Password Generator	✔
 Copy to Clipboard	✔
-Dark Mode / Light Mode	✔
+Add/Edit/Delete Entries	✔
 Search & Filter	✔
-Import/Export encrypted backup file	✔
-Offline support	✔
-🧱 Security Overview
+Import Backup	✔
+Export Backup	✔
+LocalStorage Encryption	✔
+Dark/Light Mode	✔
+Mobile Friendly	✔
+Works in Browser With No Installation	✔
+🔧 Tech Stack
+
+HTML
+
+CSS (Glassmorphism Design UI)
+
+JavaScript
+
+CryptoJS (AES-256 Encryption + SHA-256 Hashing)
+
+🔒 Security
 
 GlassVault uses:
 
-AES Encryption for encrypting stored passwords
+AES-256 to encrypt passwords before saving
 
-SHA-256 hashing for the master password
+SHA-256 hashing for storing the master password securely
 
-Never stores plain text anywhere
+Client-side encryption only — nothing is sent anywhere
 
-All encryption/decryption happens locally in the browser
+✔ No server
+✔ No account
+✔ No recovery system (for privacy)
 
-✔ No server involved
-✔ No data collection
-✔ No tracking
+🧨 If you forget your Master Password, your vault cannot be unlocked.
+This is intentional and part of the security model.
 
 📦 Installation
+Option 1 — Use Offline Locally
 
-You can run GlassVault locally or host it anywhere.
+Download the project folder
 
-Option 1: Open Locally
-1. Download the project files
-2. Open index.html in your browser
+Open index.html in any modern browser
 
-Option 2: Deploy to GitHub Pages
-1. Push project to a public GitHub repo
-2. Go to Repo → Settings → Pages
-3. Select "main" branch → /root
-4. Save → Your site will be live in a few seconds
+Use your vault completely offline
 
-🧰 Tech Stack
+Option 2 — Deploy on GitHub Pages
 
-HTML
-CSS
-JavaScript
-CryptoJS (for encryption)
+Upload the project to a GitHub repository
 
-📷 Screenshots (optional — add later)
-📌 login-screen.png
-📌 dashboard.png
-📌 password-entry-ui.png
+Open: Settings → Pages
 
-📄 License
+Select:
 
-This project is open-source under the MIT License.
-You may use, modify, and customize it for personal or commercial use.
+Branch: main
 
-📣 Warning 
+Folder: /root
 
-✔ If you forget the master password, there is no recovery — this is intentional for privacy and security.
+Deploy — Your vault will be live in seconds
 
-⭐ Contribute
+💾 Backup & Restore
 
-Want to improve GlassVault?
-Feel free to open issues or submit PRs.
+GlassVault provides export and import options.
 
-❤️ Made for privacy-focused users.
+Action	Format	Encrypted?
+Export backup	.json	✔
+Import backup	.json	✔
+
+🔍 Backups are still encrypted — they are only readable by re-entering the same master password inside GlassVault.
+
+📷 Screenshots (Optional to Add)
+📌 /screenshots/login-screen.png
+📌 /screenshots/dashboard.png
+📌 /screenshots/password-entry-ui.png
+
+📣 License
+
+This project is licensed under:
+
+MIT License
+
+
+✔ Allowed: Personal use, modification, commercial use
+✖ Not Allowed: Removing copyright without notice
+
+⭐ Future Enhancements (Optional)
+
+Cloud sync (optional toggle)
+
+Biometric unlock (Fingerprint/FaceID)
+
+Multiple vault profiles
+
+Auto-fill browser extension
+
+❤️ Author
+
+Developed with focus on privacy & security
+by Ritik Sharma
